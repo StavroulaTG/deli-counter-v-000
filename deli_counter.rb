@@ -18,6 +18,7 @@ def take_a_number(position, name)
 end
 
 def now_serving(position, name)
+  position << name
 
   puts "Currently serving #{ position.index(name) - 1} in line."
 

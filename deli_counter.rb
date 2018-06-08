@@ -1,12 +1,12 @@
 # Write your code here.
-def line(array)
-  if array.length == 0
+def line(position)
+  if position.length == 0
     puts "The line is currently empty."
   else
     message = "The line is currently:"
 
-    array.each do |name|
-      message << " #{array.index(name) + 1}. #{name}"
+    position.each do |name|
+      message << " #{position.index(name) + 1}. #{name}"
     end
     puts message
   end

@@ -21,6 +21,7 @@ def now_serving(position)
   if position.length == 0
     puts "There is nobody waiting to be served!"
   else
+    position.shift
     puts "Currently serving #{name}."
     end
   end

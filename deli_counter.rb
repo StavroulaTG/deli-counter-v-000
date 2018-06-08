@@ -18,7 +18,7 @@ def take_a_number(position, name)
 end
 
 def now_serving(position)
-  if position == 0
+  if position.length == 0
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{name}."

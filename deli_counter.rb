@@ -20,7 +20,7 @@ end
 def now_serving(position, name)
   position << name
 
-  puts "Currently serving #{ position.index(name) - 1} in line."
+  puts "Currently serving #{position.index(name) - 1} in line."
 
   puts "There is nobody waiting to be served!"
  end

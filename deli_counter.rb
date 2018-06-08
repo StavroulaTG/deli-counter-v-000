@@ -21,7 +21,7 @@ def now_serving(position)
   if position == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{position.index(name)}."
+    puts "Currently serving #{name}."
     end
   end
 end

@@ -1,6 +1,6 @@
 # Write your code here.
-def line(position)
-  if position.length == 0
+def line(array)
+  if array.length == 0
     puts "The line is currently empty."
   else
     message = "The line is currently:"

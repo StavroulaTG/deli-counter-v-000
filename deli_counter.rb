@@ -5,22 +5,22 @@ def line(position)
   else
     message = "The line is currently:"
 
-    position.each do |name|
-      message << " #{position.index(name) + 1}. #{name}"
+    array.each do |name|
+      message << " #{array.index(name) + 1}. #{name}"
     end
     puts message
   end
 end
 
-def take_a_number(position, name)
-  position << name
-  puts "Welcome, #{name}. You are number #{position.index(name) + 1} in line."
+def take_a_number(array, name)
+  array << name
+  puts "Welcome, #{name}. You are number #{Array.index(name) + 1} in line."
 end
 
-def now_serving(position)
-  if position.length == 0
+def now_serving(array)
+  if array.length == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{position.shift}."
+    puts "Currently serving #{array.shift}."
   end
 end
